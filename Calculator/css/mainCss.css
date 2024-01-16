@@ -1,0 +1,92 @@
+﻿/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+:root {
+    --primary-purple: #6B3CC9;
+    --secondary-purple: #956be8;
+    --light-purple: #ddd0f7;
+    --light-grey: #c7c7c7;
+    --bg-light-purple: #f0edf5;
+    --grey-purple: #212431;
+    --primary-black-grey: #272829;
+    --primary-white: #FFFFFF;
+    --primary-black: #000000;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-black-grey);
+    background: var(--bg-light-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    color: var(--primary-purple);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--secondary-purple);
+        text-decoration: none;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+.calculator-container {
+    text-align: center;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 0;
+}
+
+.calc-numbers {
+    font-family: 'Space Mono', serif;
+    background: var(--primary-black);
+    color: white;
+    font-size: 2em;
+    border: 0;
+    padding: 0.3em;
+    text-align: right;
+    width: 100%;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+.span-4 {
+    grid-column: span 4;
+}
+
+.btn {
+    font-size: 2em;
+    border: 1px solid var(--primary-black);
+}
+
+    .btn:hover {
+        background: var(--light-grey);
+        border: 1px solid var(--primary-black);
+    }
+
+.purple {
+    background-color: var(--secondary-purple);
+}
+
+.purple:hover{
+    background-color: var(--light-purple);
+}
